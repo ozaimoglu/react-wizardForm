@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  Button {
+    background-color: gray;
+  }
 }
 
 .mainContainer {
@@ -9,6 +12,16 @@
   margin-right: auto;
   border: 3px solid #888888;
   background-color: #f0f0f0;
+
+  @media (max-width: 1240px) {
+    width: 80%;
+  }
+
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
 }
 
 .headerComponent {
@@ -33,32 +46,6 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.workshopContainer {
+  margin-bottom: 20%;
 }
